@@ -1,5 +1,6 @@
 import 'package:camera/camera.dart';
 import 'package:features/bloc/login/view/login_view.dart';
+import 'package:features/qr_code_scanner/qr_code_scanner.dart';
 import 'package:features/permissions/permission_operations.dart';
 import 'package:features/take__save_show_picture/picture_operations.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.blue,
       ),
-      home:  const PictureOperations(),
+      home:  const QrCodeScanner(),
     );
   }
 }

@@ -46,6 +46,7 @@ dependencies:
 
   #Barcode Scanner
   flutter_barcode_scanner: ^2.0.0
+  qr_flutter: ^4.0.0
 
   #Packege and version information
   package_info_plus: ^3.0.1
