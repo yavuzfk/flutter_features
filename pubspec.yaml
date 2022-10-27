@@ -13,7 +13,7 @@ dependencies:
     sdk: flutter
 
   #Network
-  #dio: ^4.0.6
+  dio: ^4.0.6
 
   #Database
   #hive: ^2.2.3
@@ -22,7 +22,10 @@ dependencies:
   #State Management
   flutter_bloc: ^8.1.1
   bloc: ^8.1.0
-
+  equatable: ^2.0.5
+  flutter_riverpod: ^2.0.2
+  riverpod: ^2.0.2
+  
   #Fonts
   #google_fonts: ^3.0.1
 
@@ -57,7 +60,8 @@ dependencies:
   # Camera
   camera: ^0.10.0+3
 
-
+  #app to app
+  app_launcher: ^1.0.0
 
   #Find the correct path
   path_provider: ^2.0.11

@@ -20,24 +20,24 @@ class _PictureOperationsState extends State<PictureOperations> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text("Bozulan Ürün Fotoğrafı"),
+          title: const Text("Report Broken Product"),
         ),
         body: Center(
           child: imageFile == null
-              ? const Text('Fotoğraf seçilmedi.')
+              ? const Text('Image Not Selected')
               : Image.file(imageFile!),
         ),
         floatingActionButton: Column(
           children: [
             const Spacer(),
             FloatingActionButton.extended(
-              label: const Text("Fotoğraf Çek"),
+              label: const Text("Take a photo"),
               icon: const Icon(Icons.photo_camera),
               onPressed: () => onImageButtonPressed(ImageSource.camera),
             ),
             SizedBox(height: height * 0.01),
             FloatingActionButton.extended(
-              label: const Text("Galeriden Seç"),
+              label: const Text("Choose from gallery"),
               icon: const Icon(Icons.photo_library),
               onPressed: () => onImageButtonPressed(ImageSource.gallery),
             ),
@@ -62,6 +62,4 @@ class _PictureOperationsState extends State<PictureOperations> {
     });
     GallerySaver.saveImage(imageFile!.path);
   }
-
-
 }

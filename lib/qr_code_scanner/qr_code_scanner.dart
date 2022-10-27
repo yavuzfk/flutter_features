@@ -34,7 +34,7 @@ class _QrCodeScannerState extends State<QrCodeScanner> {
                  setState(() {
                    _data = data;
                  });
-                }, child: Text('Get The Data')),
+                }, child: const Text('Get The Data')),
                 Text('Received value from QR: ${_data ?? ""}'),
               ],
             ),
