@@ -74,6 +74,9 @@ dependencies:
   path_provider: ^2.0.11
   path: ^1.8.2
   
+  # SVG Files 
+  flutter_svg: ^1.1.6
+
   cupertino_icons: ^1.0.2
 
 dev_dependencies:
@@ -87,6 +90,7 @@ flutter:
 
   assets:
     - assets/
+    - assets/yuvarlak_opak.svg
 
   # fonts:
   #   - family: Schyler
