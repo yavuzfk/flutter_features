@@ -16,6 +16,7 @@ class _QrCodeScannerState extends State<QrCodeScanner> {
     FlutterBarcodeScanner.scanBarcode("#000000", "Cancel", true, ScanMode.QR).then((value) {
       setState(() {
         data = value;
+        _data = data;
       });
     });
   }

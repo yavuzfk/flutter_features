@@ -1,33 +1,31 @@
-
-import 'package:features/take__save_show_picture/save_from_url.dart';
+import 'package:features/hive_tools.dart';
+import 'package:features/page_design/page_design_view.dart';
 import 'package:flutter/material.dart';
-import 'package:camera/camera.dart';
-import 'package:features/app_to_app/call_app.dart';
-import 'package:features/barcode_scanner/barcode_scanner.dart';
-import 'package:features/cubit_example/cubit_view.dart';
-import 'package:features/qr_code_scanner/qr_code_scanner.dart';
-import 'package:features/permissions/permission_operations.dart';
-import 'package:features/take__save_show_picture/picture_operations.dart';
-import 'package:flutter/material.dart';
+import 'package:hive_flutter/adapters.dart';
 
-void main() {
-  runApp( MyApp());
+void main() async {
+  await Hive.initFlutter();
+  await Hive.openBox(HiveGetText().hiveDatabaseName);
+  // runApp(HooksGalleryApp());
+  runApp(const MyApp());
 }
 
-// class MyApp extends StatelessWidget {
-//   const MyApp({super.key});
-//
-//   // This widget is the root of your application.
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       title: 'Flutter Demo',
-//       debugShowCheckedModeBanner: false,
-//       theme: ThemeData(
-//         primarySwatch: Colors.blue,
-//       ),
-//       home: TrigerAnotherApp(),
-//     );
-//   }
-// }
-//
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      // home: hiveRead(HiveGetText().hiveABoxKey)
+      //     ? const HomePage()
+      //     : const OnBoardingScreen(),
+      home: const PageDesign(),
+    );
+  }
+}

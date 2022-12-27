@@ -4,27 +4,27 @@
 // import 'package:inflight_app/utility/color_items.dart';
 // import 'package:inflight_app/utility/text_items.dart';
 // import 'package:inflight_app/utility/text_styles.dart';
-//
+
 // import '../../utility/hive_tools.dart';
-//
+
 // class ParameterPage extends StatefulWidget {
 //   const ParameterPage({Key? key}) : super(key: key);
-//
+
 //   @override
 //   State<ParameterPage> createState() => _ParameterPageState();
 // }
-//
+
 // class _ParameterPageState extends State<ParameterPage> {
 //   late TextEditingController _controller;
 //   bool? seatSelection;
 //   bool? productIncrementSelection;
-//
+
 //   bool isSwitchedSeatSelection = false;
 //   var seatSelectionText = 'Seat Selection is CANCELED';
-//
+
 //   bool isSwitchedIncrementNotification = false;
 //   var incrementNotText = '+|- Notification is CANCELED';
-//
+
 //   void toggleSwitchSeat(bool value) {
 //     if (isSwitchedSeatSelection == false) {
 //       setState(() {
@@ -40,7 +40,7 @@
 //       // print('Seat Selection is CANCELED');
 //     }
 //   }
-//
+
 //   void toggleSwitchIncrement(bool value) {
 //     if (isSwitchedIncrementNotification == false) {
 //       setState(() {
@@ -56,7 +56,7 @@
 //       // print('Seat Selection is CANCELED');
 //     }
 //   }
-//
+
 //   @override
 //   void initState() {
 //     _controller = TextEditingController();
@@ -65,7 +65,7 @@
 //     productIncrementSelection = true;
 //     super.initState();
 //   }
-//
+
 //   void getApiUrl() {
 //     var url = hiveRead(hive_get().hiveApiBoxKey);
 //     AppParametres param = AppParametres.fromJson(url);
@@ -73,7 +73,7 @@
 //       _controller.text = param.apiUrl == null ? "" : param.apiUrl.toString();
 //     });
 //   }
-//
+
 //   @override
 //   Widget build(BuildContext context) {
 //     return Scaffold(
@@ -163,7 +163,7 @@
 //       ),
 //     );
 //   }
-//
+
 //   GestureDetector incrementSelectionWidget(BuildContext context) {
 //     return GestureDetector(
 //       onTap: () {
@@ -207,7 +207,7 @@
 //       ),
 //     );
 //   }
-//
+
 //   GestureDetector seatSelectionWidget(BuildContext context) {
 //     return GestureDetector(
 //       onTap: () {
@@ -249,7 +249,7 @@
 //       ),
 //     );
 //   }
-//
+
 //   ElevatedButton saveButton() {
 //     return ElevatedButton(
 //       style: ButtonStyles.buttonStyle,

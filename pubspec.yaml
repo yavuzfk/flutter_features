@@ -15,16 +15,18 @@ dependencies:
   #Network
   dio: ^4.0.6
 
-  #Database
-  #hive: ^2.2.3
-  #hive_flutter: ^1.1.0
-
   #State Management
   flutter_bloc: ^8.1.1
   bloc: ^8.1.0
   equatable: ^2.0.5
 
+  # Hooks
+  flutter_hooks: ^0.18.5+1
   
+  #Flash Bar
+  another_flushbar: ^1.12.29
+  smooth_page_indicator: ^1.0.0+2
+
   #Fonts
   #google_fonts: ^3.0.1
 
@@ -38,7 +40,9 @@ dependencies:
 
   # Animations
   #flutter_spinkit: ^5.1.0
-  lottie: ^1.4.3
+
+  #Loading Animation
+  lottie: ^2.0.0
 
   #currency text format
   #flutter_masked_text2: ^0.9.1
@@ -53,6 +57,10 @@ dependencies:
   #Packege and version information
   package_info_plus: ^3.0.1
 
+  #Database
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  
   # Helper
   group_radio_button: ^1.2.0
 
@@ -77,8 +85,8 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - assets/
 
   # fonts:
   #   - family: Schyler
