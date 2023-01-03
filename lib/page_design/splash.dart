@@ -9,7 +9,6 @@ class DesignSplash extends StatefulWidget {
 }
 
 class _DesignSplashState extends State<DesignSplash> {
-  // final String assetName = 'assets/yuvarlak_opak.svg';
   final Widget svgCircle = SvgPicture.asset('assets/yuvarlak_opak.svg');
 
   double diameterValue(BuildContext context) =>
@@ -39,7 +38,7 @@ class _DesignSplashState extends State<DesignSplash> {
               child: SizedBox(
                   width: 160,
                   height: 160,
-                  child: Image.asset('assets/logo_romsis.png')),
+                  child: Image.asset('assets/recipe_book_green.png')),
             ),
           ],
         ),
