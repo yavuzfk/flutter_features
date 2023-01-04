@@ -174,6 +174,6 @@ class LoginPageTextItems {
   final String signupButtonText = "Signup";
   final String confirmText = "Confirm Password";
   final String passworText = "Password";
-  final String emailText = "Password";
-  final String usernameText = "Password";
+  final String emailText = "Email";
+  final String usernameText = "Username";
 }

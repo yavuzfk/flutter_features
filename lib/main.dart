@@ -1,5 +1,5 @@
 import 'package:features/hive_tools.dart';
-import 'package:features/page_design/login_purple/login_purple.dart';
+import 'package:features/indicating_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:hive_flutter/adapters.dart';
@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
       // home: hiveRead(HiveGetText().hiveABoxKey)
       //     ? const HomePage()
       //     : const OnBoardingScreen(),
-      home: const DesignLoginPurple(),
+      home: const ExampleCupertinoDownloadButton(),
     );
   }
 }
