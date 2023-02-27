@@ -95,6 +95,7 @@ flutter:
   assets:
     - assets/
     - assets/yuvarlak_opak.svg
+    - assets/png/
 
   # fonts:
   #   - family: Schyler

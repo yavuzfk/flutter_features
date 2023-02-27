@@ -1,5 +1,5 @@
+import 'package:features/best_practice_use/using_image.dart';
 import 'package:features/hive_tools.dart';
-import 'package:features/list/list_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:hive_flutter/adapters.dart';
@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
       // home: hiveRead(HiveGetText().hiveABoxKey)
       //     ? const HomePage()
       //     : const OnBoardingScreen(),
-      home: const ListViewPage(),
+      home: const UsingImage(),
     );
   }
 }
