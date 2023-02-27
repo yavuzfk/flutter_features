@@ -1,3 +1,4 @@
+import 'package:features/list/selected_items.dart';
 import 'package:flutter/material.dart';
 import 'package:kartal/kartal.dart';
 
@@ -11,8 +12,10 @@ class ListViewPage extends StatefulWidget {
 class _ListViewPageState extends State<ListViewPage> {
   late List<ListData> dataList;
   late List<ListData> dataListTemp;
+
   late final TextEditingController _controller;
   bool isSelected = false;
+  List<ListData> selectedData = <ListData>[];
 
   @override
   void initState() {
@@ -78,7 +81,19 @@ class _ListViewPageState extends State<ListViewPage> {
           ),
         ),
         floatingActionButton: FloatingActionButton(
-          onPressed: () {},
+          onPressed: () {
+            List<ListData> selectedList = <ListData>[];
+            for (int i = 0; i < dataList.length; i++) {
+              if (dataList[i].selected == true) {
+                selectedList.add(dataList[i]);
+              }
+            }
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) =>
+                        SelectedItemsPage(selectedList: selectedList)));
+          },
           elevation: 0,
           backgroundColor: const Color.fromARGB(255, 23, 20, 173),
           splashColor: Colors.blueGrey.shade800,
