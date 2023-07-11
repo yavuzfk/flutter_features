@@ -1,9 +1,8 @@
 import 'package:features/hive_tools.dart';
+import 'package:features/qr_creator_reader/qr_menu.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:hive_flutter/adapters.dart';
-
-import 'airplane_mode_checker/airplane_mode_checker.dart';
 
 void main() async {
   await Hive.initFlutter();
@@ -29,7 +28,7 @@ class MyApp extends StatelessWidget {
       // home: hiveRead(HiveGetText().hiveABoxKey)
       //     ? const HomePage()
       //     : const OnBoardingScreen(),
-      home: const MyAppa(),
+      home: const QrMenu(),
     );
   }
 }
