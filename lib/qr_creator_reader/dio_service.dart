@@ -1,6 +1,7 @@
 import 'dart:io';
-import 'package:dio/adapter.dart';
+
 import 'package:dio/dio.dart';
+import 'package:dio/io.dart';
 
 import 'finfo.dart';
 
@@ -9,7 +10,7 @@ class DioService {
   final String _mobileFlightTag = "/MobileFlight/";
 
   dynamic _getDioRequest(String path) async {
-    (dio.httpClientAdapter as DefaultHttpClientAdapter).onHttpClientCreate =
+    (dio.httpClientAdapter as IOHttpClientAdapter).onHttpClientCreate =
         (HttpClient client) {
       client.badCertificateCallback =
           (X509Certificate cert, String host, int port) => true;

@@ -1,4 +1,4 @@
-import 'package:features/atomic_design/view/component/button/welcome_login_button.dart';
+import 'package:flutter_features/atomic_design/view/component/button/welcome_login_button.dart';
 import 'package:flutter/material.dart';
 
 class LoginViewAtomic extends StatefulWidget {
@@ -17,10 +17,8 @@ class _LoginViewAtomicState extends State<LoginViewAtomic> {
       // key: scaffoldKey,
       body: Center(child: WelcomeLoginButton(
         onCompleted: (user, errorMessage) {
-          if (user is User) {
-            ScaffoldMessenger.of(context)
-                .showSnackBar(const SnackBar(content: Text("ddd")));
-          }
+          ScaffoldMessenger.of(context)
+              .showSnackBar(const SnackBar(content: Text("ddd")));
         },
       )),
     );

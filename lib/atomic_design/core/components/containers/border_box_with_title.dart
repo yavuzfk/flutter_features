@@ -1,4 +1,4 @@
-import 'package:features/atoms/gradieng_button.dart';
+import 'package:flutter_features/atoms/gradieng_button.dart';
 import 'package:flutter/material.dart';
 
 class BorderBoxWithTitle extends StatelessWidget {

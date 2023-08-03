@@ -1,6 +1,6 @@
-import 'package:features/atoms/gradieng_button.dart';
-import 'package:features/page_design/login_purple/widgets/custom_text_field.dart';
-import 'package:features/page_design/login_purple/widgets/confirm_text_field.dart';
+import 'package:flutter_features/atoms/gradieng_button.dart';
+import 'package:flutter_features/page_design/login_purple/widgets/custom_text_field.dart';
+import 'package:flutter_features/page_design/login_purple/widgets/confirm_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -82,7 +82,7 @@ class _DesignLoginPurpleState extends State<DesignLoginPurple> {
                           padding: LoginPageSizes().textBottomPadding,
                           child: Text(
                             LoginPageTextItems().usernameText,
-                            style: Theme.of(context).textTheme.subtitle1,
+                            style: Theme.of(context).textTheme.titleMedium,
                           ),
                         ),
                         CustomTextField(controller: _userNameController),
@@ -90,7 +90,7 @@ class _DesignLoginPurpleState extends State<DesignLoginPurple> {
                           padding: LoginPageSizes().textBottomPadding,
                           child: Text(
                             LoginPageTextItems().emailText,
-                            style: Theme.of(context).textTheme.subtitle1,
+                            style: Theme.of(context).textTheme.titleMedium,
                           ),
                         ),
                         CustomTextField(controller: _emailController),
@@ -98,7 +98,7 @@ class _DesignLoginPurpleState extends State<DesignLoginPurple> {
                           padding: LoginPageSizes().textBottomPadding,
                           child: Text(
                             LoginPageTextItems().passworText,
-                            style: Theme.of(context).textTheme.subtitle1,
+                            style: Theme.of(context).textTheme.titleMedium,
                           ),
                         ),
                         PasswordConfirmTextField(
@@ -107,7 +107,7 @@ class _DesignLoginPurpleState extends State<DesignLoginPurple> {
                           padding: LoginPageSizes().textBottomPadding,
                           child: Text(
                             LoginPageTextItems().confirmText,
-                            style: Theme.of(context).textTheme.subtitle1,
+                            style: Theme.of(context).textTheme.titleMedium,
                           ),
                         ),
                         PasswordConfirmTextField(
@@ -136,7 +136,7 @@ class _DesignLoginPurpleState extends State<DesignLoginPurple> {
                   'SIGNUP',
                   style: Theme.of(context)
                       .textTheme
-                      .headline4
+                      .headlineMedium
                       ?.copyWith(color: Colors.white),
                 ),
               ),
@@ -149,7 +149,7 @@ class _DesignLoginPurpleState extends State<DesignLoginPurple> {
                 onPressed: () {},
                 child: Text(
                   'LOGIN',
-                  style: Theme.of(context).textTheme.headline6?.copyWith(
+                  style: Theme.of(context).textTheme.titleLarge?.copyWith(
                       color: const Color.fromARGB(255, 166, 154, 154)),
                 ),
               ),

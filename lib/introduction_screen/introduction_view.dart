@@ -1,10 +1,10 @@
-import 'package:features/hive_tools.dart';
-import 'package:features/introduction_screen/pages/home_page.dart';
-import 'package:features/introduction_screen/pages/intro_page_1.dart';
-import 'package:features/introduction_screen/pages/intro_page_2.dart';
-import 'package:features/introduction_screen/pages/intro_page_3.dart';
+import 'package:flutter_features/hive_tools.dart';
+import 'package:flutter_features/introduction_screen/pages/home_page.dart';
+import 'package:flutter_features/introduction_screen/pages/intro_page_1.dart';
+import 'package:flutter_features/introduction_screen/pages/intro_page_2.dart';
+import 'package:flutter_features/introduction_screen/pages/intro_page_3.dart';
 import 'package:flutter/material.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+// import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class OnBoardingScreen extends StatefulWidget {
   const OnBoardingScreen({super.key});
@@ -60,7 +60,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                             2); // 0 -> first page | 1 -> second page | 2 -> last page because there are 3
                       },
                       child: const Text('skip')),
-                  SmoothPageIndicator(controller: _controller, count: 3),
+                  // SmoothPageIndicator(controller: _controller, count: 3),
                   onLastPage
                       ? GestureDetector(
                           onTap: () {

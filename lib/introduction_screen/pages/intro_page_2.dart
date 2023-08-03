@@ -1,4 +1,4 @@
-import 'package:features/introduction_screen/widget/intro_page_controller.dart';
+import 'package:flutter_features/introduction_screen/widget/intro_page_controller.dart';
 import 'package:flutter/material.dart';
 
 class IntroPage2 extends StatelessWidget {

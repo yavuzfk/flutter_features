@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:fullscreen/fullscreen.dart';
 
 class FullScreenView extends StatefulWidget {
   const FullScreenView({Key? key}) : super(key: key);
@@ -9,13 +8,13 @@ class FullScreenView extends StatefulWidget {
 }
 
 class _FullScreenViewState extends State<FullScreenView> {
-  void enterFullScreen(FullScreenMode fullScreenMode) async {
-    await FullScreen.enterFullScreen(fullScreenMode);
-  }
+  // void enterFullScreen(FullScreenMode fullScreenMode) async {
+  //   await FullScreen.enterFullScreen(fullScreenMode);
+  // }
 
-  void exitFullScreen() async {
-    await FullScreen.exitFullScreen();
-  }
+  // void exitFullScreen() async {
+  //   await FullScreen.exitFullScreen();
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -27,13 +26,13 @@ class _FullScreenViewState extends State<FullScreenView> {
             ElevatedButton(
               child: const Text("full screen"),
               onPressed: () async {
-                enterFullScreen(FullScreenMode.EMERSIVE_STICKY);
+                // enterFullScreen(FullScreenMode.EMERSIVE_STICKY);
               },
             ),
             ElevatedButton(
               child: const Text("full screen"),
               onPressed: () async {
-                exitFullScreen();
+                // exitFullScreen();
               },
             ),
           ],

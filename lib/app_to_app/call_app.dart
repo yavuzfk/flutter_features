@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-import 'package:app_launcher/app_launcher.dart';
-
-
+// import 'package:app_launcher/app_launcher.dart';
 
 class TrigerAnotherApp extends StatelessWidget {
+  const TrigerAnotherApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -18,22 +18,22 @@ class TrigerAnotherApp extends StatelessWidget {
             children: [
               ElevatedButton(
                 onPressed: () async {
-                  await AppLauncher.openApp(
-                    androidApplicationId: "com.whatsapp",
-                  );
+                  // await AppLauncher.openApp(
+                  //   androidApplicationId: "com.whatsapp",
+                  // );
                 },
-                child: Text('Open WhatsApp'),
+                child: const Text('Open WhatsApp'),
               ),
-             const SizedBox(height: 16),
+              const SizedBox(height: 16),
               ElevatedButton(
                 onPressed: () async {
-                  final value = await AppLauncher.hasApp(
-                    androidApplicationId: "org.videolan.vlc",
-                  );
+                  // final value = await AppLauncher.hasApp(
+                  //   androidApplicationId: "org.videolan.vlc",
+                  // );
 
-                  print(value);
+                  // print(value);
                 },
-                child: Text('Check for VLC'),
+                child: const Text('Check for VLC'),
               ),
             ],
           ),

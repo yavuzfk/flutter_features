@@ -1,4 +1,4 @@
-import 'package:features/list/selected_items.dart';
+import 'package:flutter_features/list/selected_items.dart';
 import 'package:flutter/material.dart';
 import 'package:kartal/kartal.dart';
 
