@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_features/animation/deneme.dart';
+import 'package:flutter_features/animation/keyboard_opening_animation.dart';
 
 import 'dropdown_button/dropdown_view.dart';
+import 'home_widget/home_widget_view.dart';
 
 void main() async {
   // await Hive.initFlutter();
   // await Hive.openBox(HiveGetText().hiveDatabaseName);
   // runApp(HooksGalleryApp());
-  runApp(const MyApp());
+  // runApp(const MyApp());
+  runApp(const MaterialApp(home: KeyboardOpeningAnimation()));
 }
 
 class MyApp extends StatelessWidget {

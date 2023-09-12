@@ -130,9 +130,9 @@ class MainPage extends StatelessWidget {
               ],
             ),
           ),
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: const <Widget>[
+            children: <Widget>[
               Text(
                 "DON'T HAVE AN ACCOUNT ? ",
                 style: TextStyle(
